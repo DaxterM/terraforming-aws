@@ -124,6 +124,23 @@ variable "ssl_ca_private_key" {
   default     = ""
 }
 
+variable "https_web_cert" {
+  type        = "string"
+  description = "the contents of an SSL certificate to be used by the ALB"
+  default     = ""
+}
+
+variable "https_web_key" {
+  type        = "string"
+  description = "the contents of an SSL private key to be used by the ALB"
+  default     = ""
+}
+
+variable "https_web_chain" {
+  type        = "string"
+  description = "the contents of a CA public key used to sign the ALB certificate"
+  default     = ""
+}
 /*****************************
  * Isolation Segment Options *
  *****************************/
