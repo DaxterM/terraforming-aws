@@ -14,3 +14,4 @@ om.key
 *control-plane-*.yml
 *.tgz
 *secrets.yml
+terraforming-pas/plan
